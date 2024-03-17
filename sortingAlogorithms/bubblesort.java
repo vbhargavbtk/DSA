@@ -1,3 +1,6 @@
+//Other Names of bubbleSort is Sinking Sort and Exchange Sort
+
+
 package sortingAlogorithms;
 
 import java.util.Arrays;
