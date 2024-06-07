@@ -1,4 +1,4 @@
-package problemsOnBinarySearch;
+
 
 
 
@@ -10,20 +10,16 @@ public class pattern_printing {
     }
 
     private static void pattern9(int n) {
-        int starcount=1;
+        
         for (int i = 0; i < n; i++) {
             int spacecount=n-i-1;
             for (int j = 0; j < spacecount; j++) {
                 System.out.print(" ");
-                
+                int starcount=n+i+1;   
                 
             }
             
-            for (int j = 0; j <starcount; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
-            starcount=starcount+2;
+            
         }
     }
 
