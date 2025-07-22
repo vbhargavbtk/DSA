@@ -1,24 +1,24 @@
 public class binarysearch{
     public static void main(String[] args) {
-        int[] array={0,1,2,3,4,5,6,7,8};
-        int low=0;
-        int high=array.length-1;
-        
-        int target=8;
-        while(low<=high){
-            int mid=low+(high-low)/2;
-            if(target<array[mid]){
-                high=mid-1;
+        int[] arr={0,1,2,3,4,5,6,7,8};
+        int target = 5;
+        int low = 0;
+        int high = arr.length - 1 ;
+        while(low <= high){
+            int mid = (low + high ) / 2 ;
+            if(arr[mid] == target){
+                System.out.println("Element found at index "+ mid);
+                break;
             }
-            else if(target>array[mid]){
-                low=mid+1;
-              
+            else if(target > arr[mid]){
+                low = mid + 1;
             }
             else{
-                System.out.println("element found at "+mid+" position");
-                break;
+                high = mid - 1 ;
             }
         }
         
+        }
+        
     }
-}
+
