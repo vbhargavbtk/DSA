@@ -5,7 +5,12 @@
 public class pattern_printing {
     public static void main(String[] args) {
         int n=5;
-        
+        pattern3(n);
+        pattern4(n);
+        pattern5(n);
+        pattern6(n);
+        pattern7(n);
+        pattern8(n);
         pattern9(n);
     }
 
@@ -15,7 +20,7 @@ public class pattern_printing {
             int spacecount=n-i-1;
             for (int j = 0; j < spacecount; j++) {
                 System.out.print(" ");
-                int starcount=n+i+1;   
+                // int starcount=n+i+1;   
                 
             }
             
